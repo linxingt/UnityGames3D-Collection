@@ -3,8 +3,8 @@ using UnityEngine;
 public class CarControler : MonoBehaviour
 {
     private Rigidbody m_Rigidbody;
-    public float rotSpeed = 360.0f;
-    public float maxSpeed = 30.0f;
+    public float rotSpeed = 80.0f;
+    public float maxSpeed = 10.0f;
     void Start() {
         m_Rigidbody = GetComponent<Rigidbody>();
     }
