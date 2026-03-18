@@ -27,7 +27,7 @@ public class PizzaPlayer : MonoBehaviour
 
     protected void FixedUpdate()
     {
-        m_Rigidbody.velocity = transform.forward * hInput * maxSpeed;
+        m_Rigidbody.linearVelocity = transform.forward * hInput * maxSpeed;
 
         
     }

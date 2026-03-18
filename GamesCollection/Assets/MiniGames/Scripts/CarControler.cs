@@ -25,7 +25,7 @@ public class CarControler : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            m_Rigidbody.velocity = transform.forward * maxSpeed;
+            m_Rigidbody.linearVelocity = transform.forward * maxSpeed;
         }
 
     }
