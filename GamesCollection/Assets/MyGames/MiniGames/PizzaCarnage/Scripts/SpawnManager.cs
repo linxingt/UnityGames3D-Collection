@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] alienPrefabs;
     public void Spawn()
     {
-        int randomValue = Random.Range(0, 3);
+        int randomValue = Random.Range(0, alienPrefabs.Length);
         Vector3 V = alienPrefabs[randomValue].transform.position;
         V.z = Random.Range(226, 300);
         Instantiate(alienPrefabs[randomValue], V, alienPrefabs[randomValue].transform.rotation);
